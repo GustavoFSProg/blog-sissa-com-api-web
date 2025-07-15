@@ -7,6 +7,8 @@ import styled from "styled-components";
 import BasicMenu from "../BasicMenu";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo-zipado.jpeg";
+import foto from "../../assets/foto.jpeg";
+import { height } from "@mui/system";
 
 const Image = styled.img`
   display: flex;
@@ -97,6 +99,83 @@ function Navbar() {
             </IconSeta> */}
           </div>
         </Link>
+
+        <div
+          style={{
+            display: "flex",
+            with: "800px",
+            height: "auto",
+            alignItems: "center",
+            justifyContent: "space-between",
+            // background: "green",
+            marginLeft: "-370px",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              with: "100%",
+              height: "auto",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <img
+              src={foto}
+              alt="foto"
+              width="58"
+              style={{ borderRadius: "100%" }}
+            />
+            <span style={{ fontSize: "13px", color: "#206040" }}>
+              Minha História
+            </span>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              with: "50%",
+              height: "auto",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              marginLeft: "28px",
+            }}
+          >
+            <img
+              src={foto}
+              alt="foto"
+              width="58"
+              style={{ borderRadius: "100%" }}
+            />
+            <span style={{ fontSize: "13px", color: "#206040" }}>
+              Minha História
+            </span>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              with: "50%",
+              height: "auto",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              marginLeft: "28px",
+            }}
+          >
+            <img
+              src={foto}
+              alt="foto"
+              width="58"
+              style={{ borderRadius: "100%" }}
+            />
+            <span style={{ fontSize: "13px", color: "#206040" }}>
+              Minha História
+            </span>
+          </div>
+        </div>
 
         <BasicMenu />
       </Container>
