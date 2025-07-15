@@ -28,7 +28,7 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  background: lightgray;
+  background: #f2f2f2;
   /* 
   background-image: linear-gradient(
     to right,
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
   align-items: center;
   color: black;
   /* background: #80ffdf; */
-  background: lightgray;
+  background: #e6e6e6;
   font-family: Roboto;
   overflow-x: hidden;
 
