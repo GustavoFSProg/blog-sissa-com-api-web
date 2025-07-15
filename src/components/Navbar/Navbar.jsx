@@ -28,7 +28,8 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
+  background: white;
   /* 
   background-image: linear-gradient(
     to right,
@@ -88,7 +89,9 @@ function Navbar() {
               marginLeft: "-2px",
             }}
           >
-            <img src={logo} width="230" alt="logo" />
+            <Link to="/">
+              <img src={logo} width="330" alt="logo" />
+            </Link>
             {/* <IconSeta>
               <ImSpoonKnife style={{ fontSize: "23px", color: "#800000" }} />
             </IconSeta> */}
