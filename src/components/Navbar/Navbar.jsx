@@ -8,6 +8,8 @@ import BasicMenu from "../BasicMenu";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo-zipado.jpeg";
 import foto from "../../assets/foto.jpeg";
+import colher from "../../assets/colher.jpeg";
+import { FaCameraRetro } from "react-icons/fa";
 import { height } from "@mui/system";
 
 const Image = styled.img`
@@ -125,7 +127,11 @@ function Navbar() {
               src={foto}
               alt="foto"
               width="58"
-              style={{ borderRadius: "100%" }}
+              style={{
+                borderRadius: "100%",
+
+                border: "1px solid green",
+              }}
             />
             <span style={{ fontSize: "13px", color: "#206040" }}>
               Minha História
@@ -144,35 +150,62 @@ function Navbar() {
             }}
           >
             <img
-              src={foto}
+              src={colher}
               alt="foto"
               width="58"
-              style={{ borderRadius: "100%" }}
+              height="58"
+              style={{
+                borderRadius: "100%",
+
+                border: "1px solid green",
+              }}
             />
-            <span style={{ fontSize: "13px", color: "#206040" }}>
-              Minha História
-            </span>
+            <span style={{ fontSize: "13px", color: "#206040" }}>Receitas</span>
           </div>
 
           <div
             style={{
               display: "flex",
-              with: "50%",
-              height: "auto",
+              with: "30%",
+              height: "10%",
               alignItems: "center",
               justifyContent: "center",
               flexDirection: "column",
               marginLeft: "28px",
             }}
           >
-            <img
+            <div
+              style={{
+                display: "flex",
+                with: "30%",
+                height: "10%",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                marginLeft: "28px",
+                borderRadius: "100%",
+                // background: "green",
+                border: "1px solid green",
+                padding: "10px",
+                marginLeft: "-5px",
+              }}
+            >
+              {/* <img
               src={foto}
               alt="foto"
               width="58"
               style={{ borderRadius: "100%" }}
-            />
-            <span style={{ fontSize: "13px", color: "#206040" }}>
-              Minha História
+            /> */}
+              <FaCameraRetro style={{ fontSize: "35px" }} />
+            </div>
+            <span
+              style={{
+                fontSize: "13px",
+                marginLeft: "-5px",
+                color: "#206040",
+              }}
+            >
+              Galeria de fotos
             </span>
           </div>
         </div>
