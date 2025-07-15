@@ -6,7 +6,7 @@ import { ImSpoonKnife } from "react-icons/im";
 import styled from "styled-components";
 import BasicMenu from "../BasicMenu";
 import { Link } from "react-router-dom";
-// import { Icon } from "@mui/material";
+import logo from "../../assets/logo-zipado.jpeg";
 
 const Image = styled.img`
   display: flex;
@@ -28,18 +28,18 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-
+  background: lightgray;
+  /* 
   background-image: linear-gradient(
     to right,
     #80ffdf,
     #a3c2b4,
     #95bdab,
-    #698578
-  );
+    #698578  ) */
 
   @media screen and (max-width: 800px) {
     width: 79%;
-    background-image: linear-gradient(to right, #80ffdf, #a3c2b4, #698578);
+    /* background-image: linear-gradient(to right, #80ffdf, #a3c2b4, #698578); */
   }
 `;
 
@@ -50,7 +50,8 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   color: black;
-  background: #80ffdf;
+  /* background: #80ffdf; */
+  background: lightgray;
   font-family: Roboto;
   overflow-x: hidden;
 
@@ -87,10 +88,10 @@ function Navbar() {
               marginLeft: "-2px",
             }}
           >
-            Bon Appétit
-            <IconSeta>
+            <img src={logo} width="230" alt="logo" />
+            {/* <IconSeta>
               <ImSpoonKnife style={{ fontSize: "23px", color: "#800000" }} />
-            </IconSeta>
+            </IconSeta> */}
           </div>
         </Link>
 
