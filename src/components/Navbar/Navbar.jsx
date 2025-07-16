@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo-zipado.jpeg";
 import foto from "../../assets/foto.jpeg";
 import colher from "../../assets/colher.jpeg";
+import circulo from "../../assets/circo-branco.jpeg";
 import { FaCameraRetro } from "react-icons/fa";
 import { height } from "@mui/system";
 
@@ -33,7 +34,7 @@ const Container = styled.div`
   padding: 20px;
   align-items: center;
   /* background: #f2f2f2; */
-  background: white;
+  background: #ffffe6;
   /* 
   background-image: linear-gradient(
     to right,
@@ -44,6 +45,8 @@ const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 79%;
+    margin-top: -100px;
+
     /* background-image: linear-gradient(to right, #80ffdf, #a3c2b4, #698578); */
   }
 `;
@@ -71,6 +74,21 @@ const IconSeta = styled.div`
 
   @media screen and (max-width: 800px) {
     /* margin-left: -178px; */
+  }
+`;
+
+const LinksContainer = styled.div`
+  display: flex;
+  width: 400px;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+  // background: "green",
+  margin-left: -300px;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 300px;
+    width: 900px;
   }
 `;
 
@@ -102,17 +120,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <div
-          style={{
-            display: "flex",
-            with: "800px",
-            height: "auto",
-            alignItems: "center",
-            justifyContent: "space-between",
-            // background: "green",
-            marginLeft: "-370px",
-          }}
-        >
+        <LinksContainer>
           <div
             style={{
               display: "flex",
@@ -190,12 +198,6 @@ function Navbar() {
                 marginLeft: "-5px",
               }}
             >
-              {/* <img
-              src={foto}
-              alt="foto"
-              width="58"
-              style={{ borderRadius: "100%" }}
-            /> */}
               <FaCameraRetro style={{ fontSize: "35px" }} />
             </div>
             <span
@@ -208,7 +210,13 @@ function Navbar() {
               Galeria de fotos
             </span>
           </div>
-        </div>
+          <img
+            src={circulo}
+            alt="foto"
+            width="88"
+            style={{ borderRadius: "100%" }}
+          />
+        </LinksContainer>
 
         <BasicMenu />
       </Container>
