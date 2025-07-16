@@ -179,31 +179,38 @@ function Navbar() {
             />
             <SpanTitle>Minha História</SpanTitle>
           </div>
-
-          <div
-            style={{
-              display: "flex",
-              with: "50%",
-              height: "auto",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              // marginLeft: "10px",
-            }}
+          <Link
+            to="/receitas"
+            style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <img
-              src={colher}
-              alt="foto"
-              width="40"
-              height="40"
+            <div
               style={{
-                borderRadius: "100%",
+                display: "flex",
+                with: "50%",
+                height: "auto",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
 
-                border: "1px solid green",
+                // marginLeft: "10px",
               }}
-            />
-            <span style={{ fontSize: "13px", color: "#206040" }}>Receitas</span>
-          </div>
+            >
+              <img
+                src={colher}
+                alt="foto"
+                width="40"
+                height="40"
+                style={{
+                  borderRadius: "100%",
+
+                  border: "1px solid green",
+                }}
+              />
+              <span style={{ fontSize: "13px", color: "#206040" }}>
+                Receitas
+              </span>
+            </div>
+          </Link>
 
           <div
             style={{
