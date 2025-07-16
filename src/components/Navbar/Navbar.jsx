@@ -89,6 +89,15 @@ const LinksContainer = styled.div`
   @media screen and (max-width: 800px) {
     margin-top: 300px;
     width: 900px;
+    margin-left: -180px;
+  }
+`;
+
+const ImgLogo = styled.img`
+  width: 330px;
+
+  @media screen and (max-width: 800px) {
+    width: 200px;
   }
 `;
 
@@ -112,7 +121,7 @@ function Navbar() {
             }}
           >
             <Link to="/">
-              <img src={logo} width="330" alt="logo" />
+              <ImgLogo src={logo} alt="logo" />
             </Link>
             {/* <IconSeta>
               <ImSpoonKnife style={{ fontSize: "23px", color: "#800000" }} />
@@ -217,8 +226,11 @@ function Navbar() {
             style={{ borderRadius: "100%" }}
           />
         </LinksContainer>
-
+        {/* <div
+          style={{ display: "flex", marginRight: "800px", background: "green" }}
+        > */}
         <BasicMenu />
+        {/* </div> */}
       </Container>
     </Wrapper>
   );
