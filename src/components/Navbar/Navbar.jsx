@@ -34,7 +34,8 @@ const Container = styled.div`
   padding: 20px;
   align-items: center;
   /* background: #f2f2f2; */
-  background: #ffffe6;
+  background: white;
+  /* background: #ffffe6; */
   /* 
   background-image: linear-gradient(
     to right,
@@ -99,7 +100,7 @@ const LinksContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   background: "green";
-  margin-left: -310px;
+  margin-left: -360px;
 
   @media screen and (max-width: 800px) {
     margin-top: 180px;
