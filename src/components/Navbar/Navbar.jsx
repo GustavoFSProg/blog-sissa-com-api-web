@@ -79,17 +79,20 @@ const IconSeta = styled.div`
 
 const LinksContainer = styled.div`
   display: flex;
-  width: 400px;
+  width: 302px;
   height: auto;
   align-items: center;
   justify-content: space-between;
-  // background: "green",
-  margin-left: -300px;
+  background: "green";
+  /* margin-left: -250px; */
 
   @media screen and (max-width: 800px) {
     margin-top: 300px;
-    width: 900px;
     margin-left: -180px;
+    /* width: 800px; */
+    /* margin-left: 80px; */
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 
@@ -143,7 +146,7 @@ function Navbar() {
             <img
               src={foto}
               alt="foto"
-              width="58"
+              width="45"
               style={{
                 borderRadius: "100%",
 
@@ -169,8 +172,8 @@ function Navbar() {
             <img
               src={colher}
               alt="foto"
-              width="58"
-              height="58"
+              width="45"
+              height="45"
               style={{
                 borderRadius: "100%",
 
@@ -207,7 +210,7 @@ function Navbar() {
                 marginLeft: "-5px",
               }}
             >
-              <FaCameraRetro style={{ fontSize: "35px" }} />
+              <FaCameraRetro style={{ fontSize: "25px" }} />
             </div>
             <span
               style={{
@@ -219,12 +222,12 @@ function Navbar() {
               Galeria de fotos
             </span>
           </div>
-          <img
+          {/* <img
             src={circulo}
             alt="foto"
             width="88"
             style={{ borderRadius: "100%" }}
-          />
+          /> */}
         </LinksContainer>
         {/* <div
           style={{ display: "flex", marginRight: "800px", background: "green" }}
