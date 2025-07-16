@@ -102,7 +102,7 @@ const LinksContainer = styled.div`
   margin-left: -310px;
 
   @media screen and (max-width: 800px) {
-    margin-top: 300px;
+    margin-top: 100px;
     margin-left: -352px;
     /* width: 800px; */
     /* margin-left: 80px; */
