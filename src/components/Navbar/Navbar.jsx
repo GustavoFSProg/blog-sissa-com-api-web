@@ -115,6 +115,7 @@ const LinksContainer = styled.div`
 const SpanTitle = styled.span`
   font-size: 13px;
   color: #206040;
+  margin-top: 2px;
 
   @media screen and (max-width: 800px) {
     width: 6rem;
@@ -207,7 +208,14 @@ function Navbar() {
                   border: "1px solid green",
                 }}
               />
-              <span style={{ fontSize: "13px", color: "#206040" }}>
+              <span
+                style={{
+                  fontSize: "13px",
+                  color: "#206040",
+
+                  marginTop: "5px",
+                }}
+              >
                 Receitas
               </span>
             </div>
