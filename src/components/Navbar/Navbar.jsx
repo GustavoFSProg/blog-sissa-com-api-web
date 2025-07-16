@@ -45,7 +45,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 79%;
-    margin-top: -100px;
+    margin-top: -40px;
 
     /* background-image: linear-gradient(to right, #80ffdf, #a3c2b4, #698578); */
   }
@@ -88,7 +88,7 @@ const Logo = styled.div`
   margin-top: -15px;
 
   @media screen and (max-width: 800px) {
-    margin-top: 85px;
+    margin-top: -55px;
   }
 `;
 
@@ -102,8 +102,8 @@ const LinksContainer = styled.div`
   margin-left: -310px;
 
   @media screen and (max-width: 800px) {
-    margin-top: 150px;
-    margin-left: -352px;
+    margin-top: 180px;
+    margin-left: -355px;
     /* width: 800px; */
     /* margin-left: 80px; */
     justify-content: space-between;
@@ -133,8 +133,8 @@ const Menu = styled.div`
   margin-left: 30px;
 
   @media screen and (max-width: 800px) {
-    /* margin-left: -230px; */
-    /* margin-top: -100px; */
+    margin-left: -230px;
+    margin-top: -100px;
     position: "absolute";
   }
 `;
