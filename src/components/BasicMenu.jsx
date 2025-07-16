@@ -59,14 +59,14 @@ export default function BasicMenu() {
           </Link>
         </MenuItem>
 
-        <MenuItem
+        {/* <MenuItem
           style={{ marginTop: "8px", marginBottom: "8px" }}
           onClick={handleClose}
         >
           <Link style={{ textDecoration: "none" }} to="/post-register">
             Cadastro de Post
           </Link>
-        </MenuItem>
+        </MenuItem> */}
         {/* <MenuItem style={{marginTop: '8px', marginBottom: '8px'}} onClick={handleClose}>Vendas</MenuItem> */}
       </Menu>
     </div>
