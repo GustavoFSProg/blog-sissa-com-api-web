@@ -29,7 +29,7 @@ export default function BasicMenu() {
           style={{
             fontSize: "34px",
 
-            color: "#b30000",
+            color: "#206040",
             height: "30px",
           }}
         />
