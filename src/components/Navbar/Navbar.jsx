@@ -88,7 +88,7 @@ const Logo = styled.div`
   margin-top: -15px;
 
   @media screen and (max-width: 800px) {
-    margin-top: -55px;
+    margin-top: 85px;
   }
 `;
 
@@ -133,8 +133,9 @@ const Menu = styled.div`
   margin-left: 30px;
 
   @media screen and (max-width: 800px) {
-    margin-left: -230px;
-    margin-top: -100px;
+    /* margin-left: -230px; */
+    /* margin-top: -100px; */
+    position: "absolute";
   }
 `;
 function Navbar() {
@@ -145,7 +146,7 @@ function Navbar() {
           <Image alt="logo" src={logo} />
         </div> */}
         <Link to="/" style={{ textDecoration: "none", cursor: "pointer" }}>
-          <Logo style={{}}>
+          <Logo>
             <Link to="/">
               <ImgLogo src={logo} alt="logo" />
             </Link>
