@@ -77,6 +77,21 @@ const IconSeta = styled.div`
   }
 `;
 
+const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  font-family: Emilys Candy;
+  flex-direction: row;
+  color: #b30000;
+  font-size: 32px;
+  margin-left: -2px;
+  margin-top: -15px;
+
+  @media screen and (max-width: 800px) {
+    margin-top: -55px;
+  }
+`;
+
 const LinksContainer = styled.div`
   display: flex;
   width: 302px;
@@ -84,15 +99,24 @@ const LinksContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   background: "green";
-  /* margin-left: -250px; */
+  margin-left: -310px;
 
   @media screen and (max-width: 800px) {
     margin-top: 300px;
-    margin-left: -180px;
+    margin-left: -352px;
     /* width: 800px; */
     /* margin-left: 80px; */
     justify-content: space-between;
     align-items: center;
+  }
+`;
+
+const SpanTitle = styled.span`
+  font-size: 13px;
+  color: #206040;
+
+  @media screen and (max-width: 800px) {
+    width: 6rem;
   }
 `;
 
@@ -104,6 +128,15 @@ const ImgLogo = styled.img`
   }
 `;
 
+const Menu = styled.div`
+  display: flex;
+  margin-left: 30px;
+
+  @media screen and (max-width: 800px) {
+    margin-left: -230px;
+    margin-top: -100px;
+  }
+`;
 function Navbar() {
   return (
     <Wrapper>
@@ -112,24 +145,14 @@ function Navbar() {
           <Image alt="logo" src={logo} />
         </div> */}
         <Link to="/" style={{ textDecoration: "none", cursor: "pointer" }}>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              fontFamily: "Emilys Candy",
-              flexDirection: "row",
-              color: "#b30000",
-              fontSize: "32px",
-              marginLeft: "-2px",
-            }}
-          >
+          <Logo style={{}}>
             <Link to="/">
               <ImgLogo src={logo} alt="logo" />
             </Link>
             {/* <IconSeta>
               <ImSpoonKnife style={{ fontSize: "23px", color: "#800000" }} />
             </IconSeta> */}
-          </div>
+          </Logo>
         </Link>
 
         <LinksContainer>
@@ -146,16 +169,14 @@ function Navbar() {
             <img
               src={foto}
               alt="foto"
-              width="45"
+              width="42"
               style={{
                 borderRadius: "100%",
 
                 border: "1px solid green",
               }}
             />
-            <span style={{ fontSize: "13px", color: "#206040" }}>
-              Minha História
-            </span>
+            <SpanTitle>Minha História</SpanTitle>
           </div>
 
           <div
@@ -166,14 +187,14 @@ function Navbar() {
               alignItems: "center",
               justifyContent: "center",
               flexDirection: "column",
-              marginLeft: "28px",
+              // marginLeft: "10px",
             }}
           >
             <img
               src={colher}
               alt="foto"
-              width="45"
-              height="45"
+              width="40"
+              height="40"
               style={{
                 borderRadius: "100%",
 
@@ -191,7 +212,7 @@ function Navbar() {
               alignItems: "center",
               justifyContent: "center",
               flexDirection: "column",
-              marginLeft: "28px",
+              marginLeft: "15px",
             }}
           >
             <div
@@ -207,12 +228,12 @@ function Navbar() {
                 // background: "green",
                 border: "1px solid green",
                 padding: "10px",
-                marginLeft: "-5px",
+                marginLeft: "-10px",
               }}
             >
-              <FaCameraRetro style={{ fontSize: "25px" }} />
+              <FaCameraRetro style={{ fontSize: "22px" }} />
             </div>
-            <span
+            <SpanTitle
               style={{
                 fontSize: "13px",
                 marginLeft: "-5px",
@@ -220,7 +241,7 @@ function Navbar() {
               }}
             >
               Galeria de fotos
-            </span>
+            </SpanTitle>
           </div>
           {/* <img
             src={circulo}
@@ -229,11 +250,9 @@ function Navbar() {
             style={{ borderRadius: "100%" }}
           /> */}
         </LinksContainer>
-        {/* <div
-          style={{ display: "flex", marginRight: "800px", background: "green" }}
-        > */}
-        <BasicMenu />
-        {/* </div> */}
+        <Menu>
+          <BasicMenu />
+        </Menu>
       </Container>
     </Wrapper>
   );
