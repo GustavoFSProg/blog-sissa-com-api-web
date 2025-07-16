@@ -66,6 +66,7 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 118%;
+    margin-top: -15px;
   }
 `;
 
@@ -89,7 +90,7 @@ const Logo = styled.div`
   margin-top: -15px;
 
   @media screen and (max-width: 800px) {
-    margin-top: -55px;
+    margin-top: -25px;
   }
 `;
 
@@ -103,8 +104,8 @@ const LinksContainer = styled.div`
   margin-left: -360px;
 
   @media screen and (max-width: 800px) {
-    margin-top: 180px;
-    margin-left: -355px;
+    margin-top: 150px;
+    margin-left: -290px;
     /* width: 800px; */
     /* margin-left: 80px; */
     justify-content: space-between;
@@ -126,7 +127,7 @@ const ImgLogo = styled.img`
   width: 330px;
 
   @media screen and (max-width: 800px) {
-    width: 200px;
+    width: 130px;
   }
 `;
 
@@ -136,7 +137,7 @@ const Menu = styled.div`
 
   @media screen and (max-width: 800px) {
     margin-left: -230px;
-    margin-top: -100px;
+    margin-top: -50px;
     position: "absolute";
   }
 `;
