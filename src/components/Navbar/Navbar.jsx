@@ -91,7 +91,7 @@ const Logo = styled.div`
 
   @media screen and (max-width: 800px) {
     margin-top: 35px;
-    margin-left: -12px;
+    margin-left: 12px;
   }
 `;
 
@@ -108,7 +108,7 @@ const LinksContainer = styled.div`
     display: flex;
 
     margin-top: 290px;
-    margin-left: -300px;
+    margin-left: -280px;
     width: auto;
     /* background: green; */
 
