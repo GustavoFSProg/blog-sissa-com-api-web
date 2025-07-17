@@ -135,7 +135,7 @@ const ImgLogo = styled.img`
   width: 330px;
 
   @media screen and (max-width: 800px) {
-    width: 150px;
+    width: 155px;
   }
 `;
 
