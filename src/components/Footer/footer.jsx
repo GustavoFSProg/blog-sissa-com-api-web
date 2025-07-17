@@ -23,7 +23,7 @@ const Container = styled.div`
   color: white;
 
   @media screen and (max-width: 800px) {
-    width: 79%;
+    /* width: 79%; */
   }
 `;
 
