@@ -108,7 +108,7 @@ const LinksContainer = styled.div`
     display: flex;
 
     margin-top: 290px;
-    margin-left: -315px;
+    margin-left: -300px;
     width: auto;
     /* background: green; */
 
