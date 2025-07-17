@@ -185,7 +185,7 @@ const Menu = styled.div`
   margin-left: 30px;
 
   @media screen and (max-width: 800px) {
-    margin-left: -67px;
+    margin-left: -75px;
     margin-top: -130px;
     position: "absolute";
   }
