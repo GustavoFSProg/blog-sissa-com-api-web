@@ -36,12 +36,12 @@ class StartCarousel extends Component {
   render() {
     return (
       <Carousel
-        autoPlay
+        // autoPlay
         interval="3500"
         transitionTime={2150}
         showArrows
         showThumbs={false}
-        infiniteLoop={true}
+        // infiniteLoop={true}
       >
         <ImageContainer>
           <Image src={carne} alt="imagem 1" />

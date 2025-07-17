@@ -46,7 +46,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 79%;
-    margin-top: -40px;
+    margin-top: -90px;
 
     /* background-image: linear-gradient(to right, #80ffdf, #a3c2b4, #698578); */
   }
@@ -90,7 +90,8 @@ const Logo = styled.div`
   margin-top: -15px;
 
   @media screen and (max-width: 800px) {
-    margin-top: -25px;
+    margin-top: 35px;
+    margin-left: -12px;
   }
 `;
 
@@ -100,16 +101,22 @@ const LinksContainer = styled.div`
   height: auto;
   align-items: center;
   justify-content: space-between;
-  background: "green";
+  /* background: "green"; */
   margin-left: -360px;
 
   @media screen and (max-width: 800px) {
-    margin-top: 150px;
-    margin-left: -290px;
-    /* width: 800px; */
+    display: flex;
+
+    margin-top: 290px;
+    margin-left: -300px;
+    width: auto;
+    /* background: green; */
+
     /* margin-left: 80px; */
     justify-content: space-between;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 30px;
   }
 `;
 
@@ -117,6 +124,7 @@ const SpanTitle = styled.span`
   font-size: 13px;
   color: #206040;
   margin-top: 2px;
+  width: 6rem;
 
   @media screen and (max-width: 800px) {
     width: 6rem;
@@ -127,7 +135,48 @@ const ImgLogo = styled.img`
   width: 330px;
 
   @media screen and (max-width: 800px) {
-    width: 130px;
+    /* width: 100px; */
+  }
+`;
+
+const FotoRosto = styled.div`
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 800px) {
+    margin-left: -70px;
+  }
+`;
+
+const FotoReceitas = styled.div`
+  display: flex;
+  width: 50%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: column;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 30px;
+  }
+`;
+
+const FotoGaleria = styled.div`
+  display: flex;
+  width: 50%;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 40px;
   }
 `;
 
@@ -136,8 +185,8 @@ const Menu = styled.div`
   margin-left: 30px;
 
   @media screen and (max-width: 800px) {
-    margin-left: -230px;
-    margin-top: -50px;
+    margin-left: -67px;
+    margin-top: -130px;
     position: "absolute";
   }
 `;
@@ -158,45 +207,38 @@ function Navbar() {
             </IconSeta> */}
           </Logo>
         </Link>
-
+        {/* <hr
+          style={{
+            width: "100%",
+            marginLeft: "-130px",
+            marginTop: "70px",
+            height: "2",
+            background: "green",
+          }}
+        /> */}
         <LinksContainer>
-          <div
-            style={{
-              display: "flex",
-              with: "100%",
-              height: "auto",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-            }}
-          >
+          <FotoRosto>
             <img
               src={foto}
               alt="foto"
               width="42"
               style={{
                 borderRadius: "100%",
-
                 border: "1px solid green",
               }}
             />
             <SpanTitle>Minha História</SpanTitle>
-          </div>
+          </FotoRosto>
           <Link
             to="/receitas"
             style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <div
-              style={{
-                display: "flex",
-                with: "50%",
-                height: "auto",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-
-                // marginLeft: "10px",
-              }}
+            <FotoReceitas
+              style={
+                {
+                  // marginLeft: "10px",
+                }
+              }
             >
               <img
                 src={colher}
@@ -219,20 +261,10 @@ function Navbar() {
               >
                 Receitas
               </span>
-            </div>
+            </FotoReceitas>
           </Link>
 
-          <div
-            style={{
-              display: "flex",
-              with: "30%",
-              height: "10%",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              marginLeft: "15px",
-            }}
-          >
+          <FotoGaleria>
             <div
               style={{
                 display: "flex",
@@ -260,7 +292,7 @@ function Navbar() {
             >
               Galeria de fotos
             </SpanTitle>
-          </div>
+          </FotoGaleria>
           {/* <img
             src={circulo}
             alt="foto"
