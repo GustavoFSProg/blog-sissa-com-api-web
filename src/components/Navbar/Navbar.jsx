@@ -46,7 +46,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 79%;
-    margin-top: -130px;
+    margin-top: -100px;
 
     /* background-image: linear-gradient(to right, #80ffdf, #a3c2b4, #698578); */
   }
@@ -90,8 +90,8 @@ const Logo = styled.div`
   margin-top: -15px;
 
   @media screen and (max-width: 800px) {
-    margin-top: 45px;
-    margin-left: 52px;
+    margin-top: 25px;
+    margin-left: 82px;
   }
 `;
 
@@ -107,7 +107,7 @@ const LinksContainer = styled.div`
   @media screen and (max-width: 800px) {
     display: flex;
 
-    margin-top: 250px;
+    margin-top: 200px;
     margin-left: -281px;
     width: auto;
     /* background: green; */
@@ -135,7 +135,7 @@ const ImgLogo = styled.img`
   width: 330px;
 
   @media screen and (max-width: 800px) {
-    width: 170px;
+    width: 140px;
   }
 `;
 
