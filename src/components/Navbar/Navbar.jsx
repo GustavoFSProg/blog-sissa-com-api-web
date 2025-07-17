@@ -46,7 +46,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 79%;
-    margin-top: -90px;
+    margin-top: -100px;
 
     /* background-image: linear-gradient(to right, #80ffdf, #a3c2b4, #698578); */
   }
@@ -90,8 +90,8 @@ const Logo = styled.div`
   margin-top: -15px;
 
   @media screen and (max-width: 800px) {
-    margin-top: 35px;
-    margin-left: 0px;
+    margin-top: 25px;
+    margin-left: 82px;
   }
 `;
 
@@ -107,8 +107,8 @@ const LinksContainer = styled.div`
   @media screen and (max-width: 800px) {
     display: flex;
 
-    margin-top: 290px;
-    margin-left: -291px;
+    margin-top: 200px;
+    margin-left: -281px;
     width: auto;
     /* background: green; */
 
@@ -135,7 +135,7 @@ const ImgLogo = styled.img`
   width: 330px;
 
   @media screen and (max-width: 800px) {
-    /* width: 100px; */
+    width: 155px;
   }
 `;
 
@@ -148,7 +148,7 @@ const FotoRosto = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 800px) {
-    margin-left: -70px;
+    /* margin-left: -70px; */
   }
 `;
 
@@ -185,8 +185,8 @@ const Menu = styled.div`
   margin-left: 30px;
 
   @media screen and (max-width: 800px) {
-    margin-left: -78px;
-    margin-top: -130px;
+    margin-left: -88px;
+    margin-top: 10px;
     position: "absolute";
   }
 `;
@@ -199,9 +199,7 @@ function Navbar() {
         </div> */}
         <Link to="/" style={{ textDecoration: "none", cursor: "pointer" }}>
           <Logo>
-            <Link to="/">
-              <ImgLogo src={logo} alt="logo" />
-            </Link>
+            <ImgLogo src={logo} alt="logo" />
             {/* <IconSeta>
               <ImSpoonKnife style={{ fontSize: "23px", color: "#800000" }} />
             </IconSeta> */}

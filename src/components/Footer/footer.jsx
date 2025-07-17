@@ -16,8 +16,14 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
+  color: black;
+  background: #26423b;
+  font-family: Roboto;
+  overflow-x: hidden;
+  color: white;
+
   @media screen and (max-width: 800px) {
-    width: 79%;
+    /* width: 79%; */
   }
 `;
 
@@ -40,12 +46,13 @@ const Wrapper = styled.div`
 
 function Footer() {
   return (
-    <Wrapper>
-      <Container>
-        <div>Desenvolvedor web - Gustavo Sohne - gustavosohne38@gmail.com</div>
-        {/* <div style={{ marginTop: "10px" }}>gustavosohne38@gmail.com</div> */}
-      </Container>
-    </Wrapper>
+    // <Wrapper>
+    <Container>
+      <div>Gustavo Sohne - Desenvolvedor web</div>
+      <div style={{ marginTop: "10px" }}>gustavosohne38@gmail.com</div>
+      {/* <div style={{ marginTop: "10px" }}>gustavosohne38@gmail.com</div> */}
+    </Container>
+    // </Wrapper>
   );
 }
 
